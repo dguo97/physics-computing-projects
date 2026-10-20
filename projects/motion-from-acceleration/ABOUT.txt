@@ -1,0 +1,23 @@
+MOTION FROM ACCELERATION
+========================
+
+WHAT IT DOES
+Given how an object's acceleration changes with time, it calculates how fast the object is moving
+and how far it has travelled, and gives the numerical error on each answer.
+
+THE SCENARIO
+The object speeds up smoothly for about the first 10 seconds, then coasts with no acceleration from
+10 s to 40 s, then starts braking at around 47 s.
+
+HOW IT WORKS
+Velocity is the area under the acceleration curve; position is the area under the velocity curve.
+The program calculates these areas numerically (adaptive numerical integration), which also reports
+how accurate each area is. It is told about the moments where the rule for acceleration changes so
+it does not lose accuracy there.
+
+OUTPUT
+After 50 s: position about 894.4 m and speed about 12.1 m/s, with errors of around a hundred-thousandth
+of a metre. The speed is still above zero because braking has only just started.
+
+RUN IT
+python motion.py              (add --time 30 to stop at 30 seconds)

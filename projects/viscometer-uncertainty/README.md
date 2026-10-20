@@ -2,6 +2,8 @@
 
 Monte-Carlo error propagation for the falling-sphere method of measuring a liquid's viscosity.
 
+A plain-language summary is in [ABOUT.txt](ABOUT.txt).
+
 ## Physics
 **Governing law.** In slow flow a sphere reaches the Stokes terminal velocity $v=\dfrac{2(\rho_s-\rho_l)g\,r^2}{9\eta}$. With $v=l/t$ for a fall distance $l$ in time $t$:
 

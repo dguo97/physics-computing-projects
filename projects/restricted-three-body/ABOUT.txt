@@ -1,0 +1,29 @@
+RESTRICTED THREE-BODY PROBLEM
+=============================
+
+WHAT IT DOES
+Follows a tiny satellite as it moves under the gravity of two big bodies that circle each other
+(think of a spacecraft in the Earth-Moon system; the mass ratio used is 0.01228). The motion is
+viewed from a frame that turns along with the two big bodies.
+
+WHY IT IS INTERESTING
+Three bodies have no exact formula for their motion, so it must be simulated step by step. The
+starting conditions here are special: they give a periodic orbit (the Arenstorf orbit) that repeats
+itself exactly every 17.065 time units.
+
+HOW IT WORKS
+The program uses fourth-order Runge-Kutta (RK4) with 100,000 steps. The orbit passes close to one
+of the big bodies, which is why so many steps are needed.
+
+OUTPUT
+- output/three_body_trajectory.png - the looping path of the satellite.
+- output/three_body_coordinates.png and output/three_body_velocity.png
+- output/convergence.png (from three_body_convergence.py) - accuracy study.
+
+CHECKS
+After one period the satellite is back where it started, and a conserved quantity (the Jacobi
+constant) stays constant to about one part in a million.
+
+RUN IT
+python three_body.py
+python three_body_convergence.py

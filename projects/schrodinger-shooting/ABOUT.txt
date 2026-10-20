@@ -1,0 +1,24 @@
+SCHRODINGER SHOOTING METHOD
+===========================
+
+WHAT IT DOES
+Finds the allowed energy, and the shape of the wave function, of a quantum particle trapped in a box
+with walls it cannot pass. The floor of the box is flat in the left half and raised by a step (V0) in
+the right half.
+
+HOW IT WORKS ("SHOOTING")
+Guess an energy, then follow the wave function from the left wall using fourth-order Runge-Kutta. If
+the wave function does not land exactly on zero at the right wall, the guess was wrong. The program
+repeatedly halves the range of possible energies (bisection) until the wave function does hit zero at
+the right wall. The result is then scaled so that the total probability of finding the particle in
+the box is exactly 1.
+
+OUTPUT
+- E = 69.1985 eV (for the default step height of 5 eV and a search range of 50 to 100 eV).
+- output/schrodinger_wavefunction.png and output/schrodinger_probability.png
+- output/convergence.png (from schrodinger_convergence.py) - the answer gets 16 times more accurate
+  each time the step size is halved.
+
+RUN IT
+python schrodinger.py              (try --v0 8 --e-low 60 --e-high 120)
+python schrodinger_convergence.py

@@ -1,0 +1,24 @@
+MONTE-CARLO SOLID
+=================
+
+WHAT IT DOES
+Estimates the volume and the mass of a 3D shape whose density is not the same everywhere, using
+random sampling (the Monte-Carlo method).
+
+THE SHAPE
+The set of points where x^2 + y^2 < cos^2(z), for z between -pi/2 and pi/2 (a rounded, lemon-like
+solid). Its density is 10 x |sin z| x exp(-0.2|x|) x (1 - y^2).
+
+HOW IT WORKS
+The program throws a million random points into a box that surrounds the shape. The fraction that
+land inside the shape, times the box's volume, estimates the volume. Averaging the density of those
+points, times the box's volume, estimates the mass.
+
+OUTPUT
+Volume about 4.93 (the exact answer is pi^2/2 = 4.935) and mass about 16.7.
+output/convergence.png (from solid_convergence.py) shows the error shrinking as 1 divided by the
+square root of the number of points, as theory predicts.
+
+RUN IT
+python solid_mass.py               (--n 5000000 --seed 1 for more points and repeatable results)
+python solid_convergence.py

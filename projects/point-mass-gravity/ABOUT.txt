@@ -1,0 +1,22 @@
+POINT-MASS GRAVITY
+==================
+
+WHAT IT DOES
+Calculates the total gravitational pull on a small object caused by a whole cloud of other masses,
+each treated as a single point.
+
+HOW IT WORKS
+Using Newton's law of gravity, the program works out the pull from each mass in the file (stronger
+for bigger masses, weaker with the square of the distance, directed towards that mass) and adds all
+the pulls together as vectors.
+
+INPUT
+data/point_masses.csv - the position (x, y, z) and mass of each point.
+The test object defaults to 1 kg at position (1, 1, 1); change it with --object X Y Z MASS.
+
+OUTPUT
+The force in each direction and its overall size, in newtons. It is tiny (about 4e-11 N) because
+gravity between small masses is extremely weak.
+
+RUN IT
+python gravity_field.py

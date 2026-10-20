@@ -1,0 +1,25 @@
+ENERGY-MIXING SIMULATION
+========================
+
+WHAT IT DOES
+Simulates 2000 objects sharing energy. Half start with very little (0.1) and half with a lot (1000).
+Over and over, two objects chosen at random meet and each ends up with the average of their two
+energies.
+
+WHAT HAPPENS
+Total energy never changes, so the average stays at 500.05. But the energies spread out evenly and
+get closer and closer to that average. After 10,000 meetings the spread has shrunk from about 500 to
+about 40.
+
+THE MATHS
+On average the variance (spread squared) shrinks by a factor of about e every 2000 meetings. The
+program checks this prediction against the simulation.
+
+OUTPUT
+- Mean and spread of the energies, printed.
+- output/energy_mixing.png - histogram of the energies after the meetings.
+- output/convergence.png (from energy_mixing_convergence.py) - simulated spread against the prediction.
+
+RUN IT
+python energy_mixing.py            (--collisions 50000 --seed 1 to change it)
+python energy_mixing_convergence.py

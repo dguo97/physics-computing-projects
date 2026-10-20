@@ -1,0 +1,27 @@
+GPS ROUTE ANALYZER
+==================
+
+WHAT IT DOES
+Reads a file of GPS readings from a journey (one row per reading, giving the east-west position x,
+the north-south position y, and the height above sea level) and turns it into:
+  1. a map of the route (the path seen from above),
+  2. a graph of how the height changes along the route, and
+  3. the total distance travelled.
+
+HOW IT WORKS
+Between each pair of neighbouring readings it measures the straight-line distance with Pythagoras
+and adds them all up. The height graph plots height against that running total distance.
+
+INPUT
+data/journey_gps.csv - 528 GPS readings. You can give it your own file with the same layout.
+
+OUTPUT
+- Total distance (printed): about 14,349 m, i.e. 14.3 km.
+- output/journey_path_xy.png and output/journey_elevation.png
+
+WHAT TO LOOK FOR
+The route is almost a loop (start and end are about 80 m apart) and climbs from about 293 m to
+992 m above sea level.
+
+RUN IT
+python route_analysis.py

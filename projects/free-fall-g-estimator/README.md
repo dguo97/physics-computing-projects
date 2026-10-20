@@ -2,6 +2,8 @@
 
 Estimates the gravitational acceleration from drop experiments with per-point timing uncertainties.
 
+A plain-language summary is in [ABOUT.txt](ABOUT.txt).
+
 ## Physics
 **Governing equation.** Constant acceleration from rest gives $s=\tfrac12 g t^2$, so the fall time is
 

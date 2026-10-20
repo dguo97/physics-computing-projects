@@ -2,6 +2,8 @@
 
 Volume and mass of the solid x² + y² < cos²z with a spatially varying density.
 
+A plain-language summary is in [ABOUT.txt](ABOUT.txt).
+
 ## Physics
 **Governing integrals.** The solid is the set where $x^2+y^2<\cos^2 z$ for $-\pi/2\le z\le\pi/2$, with density $\rho=10|\sin z|\,e^{-0.2|x|}(1-y^2)$:
 

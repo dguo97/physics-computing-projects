@@ -1,0 +1,24 @@
+FINITE-WELL ENERGY (NEWTON'S METHOD)
+====================================
+
+WHAT IT DOES
+Finds an allowed energy of a quantum particle in a region where the potential energy has two levels.
+Quantum mechanics only allows certain energies, and they are the answers to an equation that cannot be
+rearranged to give the energy directly.
+
+HOW IT WORKS
+The program uses Newton's method: start with a guess, then repeatedly improve it using the slope of
+the equation, until the guess stops changing. Each step roughly squares the previous error, so it
+becomes accurate in only 8 steps.
+
+INPUT
+Well depth V0 (default 10 eV), width (default 1,000,000) and a starting guess (default 50 eV, which
+must be above V0). A different guess can lead to a different allowed energy.
+
+OUTPUT
+E = 51.5930 eV. output/convergence.png (from well_convergence.py) shows the size of each Newton step
+dropping extremely fast.
+
+RUN IT
+python well_energy.py              (--v0 10 --width 1e6 --guess 70 to change it)
+python well_convergence.py

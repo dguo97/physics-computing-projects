@@ -1,0 +1,26 @@
+FREE-FALL g ESTIMATOR
+=====================
+
+WHAT IT DOES
+Works out the strength of gravity (g, in m/s^2) from experiments where objects were dropped from
+different heights and the fall time was measured. It also says how uncertain the answer is.
+
+HOW IT WORKS
+For something dropped from rest, height = 1/2 x g x time^2, so time = square root of (2 x height / g).
+The program finds the value of g that makes this curve pass as close as possible to the measured
+points, giving more weight to points whose timing was more precise (a weighted least-squares fit).
+
+INPUT
+data/free_fall_times.csv - 91 drops: height (m), measured fall time (s) and the uncertainty on that
+time (s).
+
+OUTPUT
+- g and its uncertainty (printed): g = 9.68 +/- 0.22 m/s^2, consistent with the standard 9.81.
+- output/gravity_fit.png - the data points with error bars and the fitted curve.
+
+WHAT TO LOOK FOR
+The red curve should run through the points. The fit quality (reduced chi-squared 0.73) is good, so
+the model matches the data.
+
+RUN IT
+python g_estimator.py

@@ -2,6 +2,8 @@
 
 Eigenenergy and normalised wave function for a particle in a box with a step in its floor.
 
+A plain-language summary is in [ABOUT.txt](ABOUT.txt).
+
 ## Physics
 **Governing equation.** The time-independent Schrödinger equation in a box of width $2a$ whose floor is $0$ for $x<a$ and $V_0$ for $x>a$, with $\psi(0)=\psi(2a)=0$:
 

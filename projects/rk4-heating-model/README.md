@@ -2,6 +2,8 @@
 
 Integrates dy/dx = a·e^(−2x) − b(y⁴ − 1): a body heated by a decaying source while radiating to its surroundings.
 
+A plain-language summary is in [ABOUT.txt](ABOUT.txt).
+
 ## Physics
 **Governing equation** (in scaled units, with the surroundings at $y=1$):
 

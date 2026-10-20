@@ -2,6 +2,8 @@
 
 Solves a general 4×4 system and a 9-unknown resistor circuit written as Kirchhoff current/voltage equations.
 
+A plain-language summary is in [ABOUT.txt](ABOUT.txt).
+
 ## Physics
 **Governing laws.** Kirchhoff's current law ($\sum I=0$ at every junction), Kirchhoff's voltage law ($\sum V=0$ around every loop) and Ohm's law ($V=IR$) are all *linear* in the unknown currents and voltage, so the circuit collapses to
 

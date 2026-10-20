@@ -2,6 +2,8 @@
 
 Mass of a uniform elliptical plate and the force it exerts on a 10 kg mass above it.
 
+A plain-language summary is in [ABOUT.txt](ABOUT.txt).
+
 ## Physics
 **Governing integral.** Summing the pull of every area element of the sheet (surface density $\sigma$, semi-axes $a=10$ m, $b=5$ m):
 

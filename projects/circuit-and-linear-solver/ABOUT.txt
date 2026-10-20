@@ -1,0 +1,19 @@
+CIRCUIT AND LINEAR-SYSTEM SOLVER
+================================
+
+WHAT IT DOES
+Solves sets of simultaneous linear equations, in two examples:
+  1. a general 4-equation, 4-unknown system, and
+  2. an electrical circuit with 9 unknowns (the currents in the wires and one voltage).
+
+HOW IT WORKS
+The circuit rules (current going into a junction equals current coming out; voltages around a loop
+add up to zero; Ohm's law V = I x R) all give straight-line equations in the unknowns. These are
+written as one matrix equation and solved exactly by the computer.
+
+CHECKING THE ANSWER
+The program then tests the solution against extra loop equations that were NOT used in solving. They
+all come out as zero, which shows the answer is consistent.
+
+RUN IT
+python linear_solver.py            (--which circuit or --which system to run just one)

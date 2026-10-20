@@ -30,6 +30,8 @@ These are a couple of projects I made during university, later cleaned up, fixed
 | [Finite-Well Energy (Newton)](projects/finite-well-newton) | Finds an allowed energy by solving the transcendental condition k + k′·tan(kw) = 0. |
 | [Schrödinger Shooting Method](projects/schrodinger-shooting) | Eigenenergy and normalised wave function for a particle in a box with a step in its floor. |
 
+Each project folder also has an `ABOUT.txt`, a plain-language explanation of what it does.
+
 ## Quick start
 ```bash
 pip install -r requirements-dev.txt
@@ -44,13 +46,12 @@ Every project script has a command-line interface; run it with `--help` to see t
 No local setup is needed. Colab already has NumPy, SciPy and Matplotlib, so you only need to fetch the code.
 
 1. Open [colab.research.google.com](https://colab.research.google.com) and create a **New notebook**.
-2. Paste this into the first cell and run it (replace `<your-username>` with the GitHub account that hosts the repo):
+2. Paste this into the first cell and run it 
    ```python
-   !git clone https://github.com/<your-username>/physics-computing-projects.git
+   !git clone https://github.com/dguo97/physics-computing-projects.git
    %cd physics-computing-projects
    !pip install -q -r requirements.txt
    ```
-   If your repository has a different name, use that name in both lines.
 3. Run any project with `!python`, using the same options as on the command line:
    ```python
    !python projects/viscometer-uncertainty/viscometer.py --n 50000 --seed 1

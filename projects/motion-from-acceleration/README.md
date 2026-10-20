@@ -2,6 +2,8 @@
 
 Position and velocity, with numerical error bounds, from a piecewise acceleration profile (speed-up, coast, brake).
 
+A plain-language summary is in [ABOUT.txt](ABOUT.txt).
+
 ## Physics
 **Governing relations.**
 

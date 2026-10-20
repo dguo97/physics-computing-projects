@@ -2,6 +2,8 @@
 
 Net gravitational force on a test mass from a cloud of point masses read from a CSV.
 
+A plain-language summary is in [ABOUT.txt](ABOUT.txt).
+
 ## Physics
 **Governing law.** Newtonian gravity is linear, so the forces from the individual masses simply add (superposition):
 

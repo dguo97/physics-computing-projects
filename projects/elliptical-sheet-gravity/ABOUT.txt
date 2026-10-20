@@ -1,0 +1,19 @@
+ELLIPTICAL SHEET GRAVITY
+========================
+
+WHAT IT DOES
+Finds the mass of a flat, evenly thick elliptical plate (10 m by 5 m semi-axes) and the gravitational
+pull it exerts on a 10 kg object placed near it.
+
+HOW IT WORKS
+The plate is treated as a huge number of tiny pieces. The pull from each piece is calculated and
+added up using numerical double integration over the ellipse's area.
+
+CHECKS
+- The plate's mass comes out at exactly 157,079.6 kg, matching the formula (density x pi x a x b).
+- Directly above the middle of the plate the sideways pulls cancel out, and the downward pull is
+  towards the plate.
+- Very far away, the plate pulls like a single point mass.
+
+RUN IT
+python sheet_gravity.py            (--position X Y Z to move the object)

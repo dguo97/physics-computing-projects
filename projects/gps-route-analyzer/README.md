@@ -2,6 +2,8 @@
 
 Turns raw GPS samples (x, y, elevation) into a route map, an elevation profile and a total distance.
 
+A plain-language summary is in [ABOUT.txt](ABOUT.txt).
+
 ## Physics
 **Governing relation.** The horizontal path length is the sum of straight chords between consecutive fixes:
 

@@ -1,0 +1,25 @@
+RK4 HEATING MODEL
+=================
+
+WHAT IT DOES
+Simulates how the temperature of an object changes over time when it is being heated by a source that
+fades away while it also gives off heat to its surroundings.
+
+THE MODEL
+The temperature rises because of the heating, which dies away quickly (like e to the power -2x). It
+falls because of heat radiated away, which gets stronger very fast as the object gets hotter (fourth
+power of the temperature). A temperature of 1 means "same as the surroundings".
+
+HOW IT WORKS
+There is no neat formula for the answer, so the program steps forward in tiny time steps using the
+fourth-order Runge-Kutta method (RK4), a standard and accurate way to solve equations like this.
+
+OUTPUT
+- The highest temperature (about 1.43) and when it happens (about t = 0.57), printed.
+- output/rk4_temperature.png - temperature against time: it rises, peaks, then settles back to 1.
+- output/convergence.png (from heating_convergence.py) - shows the error shrinks as the 4th power of
+  the step size, as theory predicts.
+
+RUN IT
+python heating_model.py            (try --a 8 --b 0.3 to change the heating and cooling strength)
+python heating_convergence.py

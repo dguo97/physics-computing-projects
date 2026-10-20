@@ -2,6 +2,8 @@
 
 A light satellite moving in the field of two massive bodies (μ = 0.01228) in the rotating frame — the Arenstorf periodic orbit.
 
+A plain-language summary is in [ABOUT.txt](ABOUT.txt).
+
 ## Physics
 **Governing equations** (frame rotating with the two massive bodies, which sit at $-\mu$ and $1-\mu$; $r$ and $s$ are the satellite's distances to them):
 

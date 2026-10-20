@@ -2,6 +2,8 @@
 
 Finds an allowed energy by solving the transcendental condition k + k′·tan(kw) = 0.
 
+A plain-language summary is in [ABOUT.txt](ABOUT.txt).
+
 ## Physics
 **Governing equation.** Matching the wave function and its derivative at the boundary of a piecewise-constant potential gives a condition that cannot be solved for $E$ in closed form:
 

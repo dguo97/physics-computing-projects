@@ -2,6 +2,8 @@
 
 2000 objects — half cold (0.1), half hot (1000) — repeatedly pair up at random and share their energy equally.
 
+A plain-language summary is in [ABOUT.txt](ABOUT.txt).
+
 ## Physics
 **Governing rule.** In each collision two random objects $i,j$ both take the average of their energies, $e_i,e_j\to\tfrac12(e_i+e_j)$. This conserves total energy exactly and removes $\tfrac12(e_i-e_j)^2$ from the sum of squares. Averaging over random pairs, the variance of $N$ objects decays as
 

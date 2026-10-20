@@ -1,0 +1,27 @@
+VISCOMETER UNCERTAINTY
+======================
+
+WHAT IT DOES
+Shows how uncertain a viscosity measurement is when it comes from the falling-sphere method: drop a
+ball into a thick liquid, time how long it takes to fall a set distance, and work out how "thick"
+(viscous) the liquid is.
+
+HOW IT WORKS
+Every measurement (ball size, ball mass, liquid mass and volume, fall distance, fall time) has a
+small uncertainty. The program repeats the experiment 10,000 times on the computer, each time picking
+every measurement at random within its uncertainty, and calculates the viscosity every time. The
+spread of the 10,000 answers is the uncertainty of the result.
+
+OUTPUT
+- Viscosity about 35.0 +/- 0.8 Pa s, printed.
+- output/viscosity_distribution.png - a histogram of the 10,000 answers.
+- output/convergence.png (from viscometer_convergence.py) - how the average improves with more runs.
+The ball diameter, ball mass and fall time contribute most of the uncertainty.
+
+UNITS NOTE
+The liquid volume 0.1 is treated as cubic metres, as in the original code. If it should be litres,
+use --liquid-volume-in-litres (the answer becomes about 25.2 Pa s).
+
+RUN IT
+python viscometer.py --n 50000 --seed 1
+python viscometer_convergence.py
