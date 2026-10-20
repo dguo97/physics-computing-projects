@@ -17,6 +17,7 @@ $$\ddot x=x+2\dot y-(1-\mu)\frac{x+\mu}{r^{3}}-\mu\frac{x-1+\mu}{s^{3}},\qquad
 **What the result means.** After one period the state is back at its start, and the Jacobi constant stays constant to about $10^{-5}$. The orbit stays bounded: each period the satellite makes a three-lobed loop around the heavy body and comes back to a close pass of the light one, instead of escaping.
 
 ## Run
+From the repository root, `cd projects/restricted-three-body` first, then:
 ```bash
 python three_body.py
 python three_body.py --steps 200000      # finer steps

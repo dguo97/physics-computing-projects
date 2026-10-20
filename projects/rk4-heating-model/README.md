@@ -16,6 +16,7 @@ The first term is a heat source that decays exponentially; the second is radiati
 **What the result means.** The body heats while the source exceeds the radiative loss, peaks at $y\approx1.43$ near $t\approx0.57$ when the two balance, then relaxes back towards the surroundings temperature $y=1$ as the source dies away.
 
 ## Run
+From the repository root, `cd projects/rk4-heating-model` first, then:
 ```bash
 python heating_model.py
 python heating_model.py --a 8 --b 0.3 --xmax 10 --steps 50000

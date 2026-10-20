@@ -14,6 +14,7 @@ $$t(s)=\sqrt{\frac{2s}{g}}$$
 **What the result means.** The fit gives $g=9.68\pm0.22$ m/s², which is 0.6σ from the standard 9.81 m/s². The reduced $\chi^2$ is 0.73 (90 degrees of freedom), so the model describes the data well and the quoted timing errors are not underestimated.
 
 ## Run
+From the repository root, `cd projects/free-fall-g-estimator` first, then:
 ```bash
 python g_estimator.py
 python g_estimator.py drops.csv      # columns: height[m], time[s], time_uncertainty[s]

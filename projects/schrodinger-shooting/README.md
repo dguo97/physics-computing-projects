@@ -14,6 +14,7 @@ $$-\frac{\hbar^2}{2m}\psi''+V(x)\,\psi=E\,\psi$$
 **What the result means.** The eigenvalue bracketed by [50, 100] eV is $E=69.198$ eV; its wave function has two interior nodes and oscillates faster on the lower-potential side, where the kinetic energy is larger.
 
 ## Run
+From the repository root, `cd projects/schrodinger-shooting` first, then:
 ```bash
 python schrodinger.py
 python schrodinger.py --v0 8 --e-low 60 --e-high 120 --steps 2000

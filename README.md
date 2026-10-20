@@ -40,6 +40,14 @@ python run_all.py     # run every project and every accuracy study
 python projects/viscometer-uncertainty/viscometer.py --n 50000 --seed 1
 python projects/schrodinger-shooting/schrodinger.py --v0 8 --e-low 60 --e-high 120
 ```
+### Running one project
+Either give the script's path from the repository root, or move into the project's folder first:
+```bash
+python projects/rk4-heating-model/heating_model.py       # from the repository root
+cd projects/rk4-heating-model && python heating_model.py  # or from inside the folder
+```
+Each project's own README lists its commands and options.
+
 Every project script has a command-line interface; run it with `--help` to see the options.
 
 ## Run on Google Colab

@@ -14,6 +14,7 @@ $$L=\sum_{i}\sqrt{(x_{i+1}-x_i)^2+(y_{i+1}-y_i)^2}$$
 **What the result means.** The route is a roughly 14.3 km near-loop (start and end are about 80 m apart) that climbs from 293 m to 992 m, with about 1130 m of total ascent.
 
 ## Run
+From the repository root, `cd projects/gps-route-analyzer` first, then:
 ```bash
 python route_analysis.py                 # bundled sample
 python route_analysis.py my_track.csv       # your own CSV: x[m], y[m], elevation[m], ...

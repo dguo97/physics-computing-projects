@@ -16,6 +16,7 @@ The acceleration is a smooth logistic switch-on (until $t=10$ s), zero while coa
 **What the result means.** After 50 s the object has covered about 894 m and is still moving at 12.1 m/s, because braking only begins around $t\approx47$ s. The numerical error is about $10^{-5}$ m, negligible next to any physical uncertainty in the model.
 
 ## Run
+From the repository root, `cd projects/motion-from-acceleration` first, then:
 ```bash
 python motion.py              # state at t = 50 s
 python motion.py --time 30    # state at t = 30 s
