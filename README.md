@@ -48,6 +48,25 @@ cd projects/rk4-heating-model && python heating_model.py  # or from inside the f
 ```
 Each project's own README lists its commands and options.
 
+### Run commands for every project
+Run these from the repository root (add `--help` to any of them for options).
+
+| Project | Run | Accuracy study |
+|---|---|---|
+| GPS Route Analyzer | `python projects/gps-route-analyzer/route_analysis.py` | – |
+| Free-Fall g Estimator | `python projects/free-fall-g-estimator/g_estimator.py` | – |
+| Motion from Acceleration | `python projects/motion-from-acceleration/motion.py` | – |
+| Circuit & Linear-System Solver | `python projects/circuit-and-linear-solver/linear_solver.py` | – |
+| RK4 Heating Model | `python projects/rk4-heating-model/heating_model.py` | `python projects/rk4-heating-model/heating_convergence.py` |
+| Point-Mass Gravity | `python projects/point-mass-gravity/gravity_field.py` | – |
+| Elliptical Sheet Gravity | `python projects/elliptical-sheet-gravity/sheet_gravity.py` | – |
+| Restricted Three-Body Problem | `python projects/restricted-three-body/three_body.py` | `python projects/restricted-three-body/three_body_convergence.py` |
+| Monte-Carlo Solid | `python projects/monte-carlo-solid/solid_mass.py` | `python projects/monte-carlo-solid/solid_convergence.py` |
+| Viscometer Uncertainty | `python projects/viscometer-uncertainty/viscometer.py` | `python projects/viscometer-uncertainty/viscometer_convergence.py` |
+| Energy-Mixing Simulation | `python projects/energy-mixing/energy_mixing.py` | `python projects/energy-mixing/energy_mixing_convergence.py` |
+| Finite-Well Energy (Newton) | `python projects/finite-well-newton/well_energy.py` | `python projects/finite-well-newton/well_convergence.py` |
+| Schrödinger Shooting Method | `python projects/schrodinger-shooting/schrodinger.py` | `python projects/schrodinger-shooting/schrodinger_convergence.py` |
+
 Every project script has a command-line interface; run it with `--help` to see the options.
 
 ## Run on Google Colab
