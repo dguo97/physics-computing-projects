@@ -14,7 +14,7 @@ $$\mathrm{Var}(n)=\mathrm{Var}(0)\Big(1-\frac1{N-1}\Big)^{n}\approx \mathrm{Var}
 **What the result means.** The mean stays at 500.05 (energy conservation) while the spread shrinks from about 500 to about 40 after 10 000 collisions: roughly 5 e-foldings, since one e-fold takes about $N$ collisions. With equal sharing every object tends to the mean; if the energy were split at random instead, the long-time distribution would be exponential (Boltzmann-like) rather than a single spike.
 
 ## Run
-From the repository root, `cd projects/energy-mixing` first, then:
+From the repository root, `cd projects/energy-mixing` first, then run it. For example:
 ```bash
 python energy_mixing.py
 python energy_mixing.py --collisions 50000 --seed 1

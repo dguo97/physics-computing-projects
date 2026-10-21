@@ -16,7 +16,7 @@ Roots are the allowed energies.
 **What the result means.** For $V_0=10$ eV and $w=10^6$ the iteration settles on $E=51.5930$ eV from a starting guess of 50 eV, with $f$ vanishing there to rounding error.
 
 ## Run
-From the repository root, `cd projects/finite-well-newton` first, then:
+From the repository root, `cd projects/finite-well-newton` first, then run it. For example:
 ```bash
 python well_energy.py
 python well_energy.py --v0 10 --width 1e6 --guess 70

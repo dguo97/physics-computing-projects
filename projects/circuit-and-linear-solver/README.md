@@ -14,7 +14,7 @@ $$A\,\mathbf{x}=\mathbf{b}$$
 **What the result means.** A solution that satisfies the extra loop equations (residuals below $10^{-9}$) shows the equations are consistent and the circuit is fully determined.
 
 ## Run
-From the repository root, `cd projects/circuit-and-linear-solver` first, then:
+From the repository root, `cd projects/circuit-and-linear-solver` first, then run it. For example:
 ```bash
 python linear_solver.py
 python linear_solver.py --which circuit    # or: system

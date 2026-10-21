@@ -37,11 +37,12 @@ Each project folder also has an `ABOUT.txt`, a plain-language explanation of wha
 pip install -r requirements-dev.txt
 pytest                # 34 checks (~1 min)
 python run_all.py     # run every project and every accuracy study
+# For example, to run single projects with options:
 python projects/viscometer-uncertainty/viscometer.py --n 50000 --seed 1
 python projects/schrodinger-shooting/schrodinger.py --v0 8 --e-low 60 --e-high 120
 ```
 ### Running one project
-Either give the script's path from the repository root, or move into the project's folder first:
+Either give the script's path from the repository root, or move into the project's folder first. For example:
 ```bash
 python projects/rk4-heating-model/heating_model.py       # from the repository root
 cd projects/rk4-heating-model && python heating_model.py  # or from inside the folder
@@ -49,7 +50,7 @@ cd projects/rk4-heating-model && python heating_model.py  # or from inside the f
 Each project's own README lists its commands and options.
 
 ### Run commands for every project
-Run these from the repository root (add `--help` to any of them for options).
+Run these from the repository root. Add `--help` to any of them to see its options, for example `python projects/viscometer-uncertainty/viscometer.py --help`.
 
 | Project | Run | Accuracy study |
 |---|---|---|
@@ -79,24 +80,24 @@ No local setup is needed. Colab already has NumPy, SciPy and Matplotlib, so you 
    %cd physics-computing-projects
    !pip install -q -r requirements.txt
    ```
-3. Run any project with `!python`, using the same options as on the command line:
+3. Run any project with `!python`, using the same options as on the command line. For example:
    ```python
    !python projects/viscometer-uncertainty/viscometer.py --n 50000 --seed 1
    !python projects/schrodinger-shooting/schrodinger.py
    ```
-4. Scripts save their figures as PNG files instead of opening a window, so display one in the notebook like this:
+4. Scripts save their figures as PNG files instead of opening a window, so display one in the notebook. For example:
    ```python
    from IPython.display import Image
    Image("projects/schrodinger-shooting/output/schrodinger_wavefunction.png")
    ```
-   Or show every figure of a project at once:
+   Or, for example, show every figure of a project at once:
    ```python
    import glob
    from IPython.display import display, Image
    for f in sorted(glob.glob("projects/restricted-three-body/output/*.png")):
        display(Image(f))
    ```
-5. To run everything, or the tests:
+5. To run everything, or the tests (for example):
    ```python
    !python run_all.py                       # all projects and accuracy studies (about a minute)
    !pip install -q -r requirements-dev.txt

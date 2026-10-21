@@ -14,7 +14,7 @@ $$\mathbf{F}=G\,m\,\sigma\iint_{\text{ellipse}}\frac{\mathbf{r}'-\mathbf{r}}{|\m
 **What the result means.** The $z$ component is negative: the sheet pulls the mass down towards itself. On the central axis the $x$ and $y$ components vanish by symmetry, and far from the sheet the force approaches that of a point mass $M$ (both tested).
 
 ## Run
-From the repository root, `cd projects/elliptical-sheet-gravity` first, then:
+From the repository root, `cd projects/elliptical-sheet-gravity` first, then run it. For example:
 ```bash
 python sheet_gravity.py
 python sheet_gravity.py --position 0 0 2

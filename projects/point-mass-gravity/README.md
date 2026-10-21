@@ -14,7 +14,7 @@ $$\mathbf{F}=\sum_i G\,\frac{m_i M\,(\mathbf{r}_i-\mathbf{r})}{|\mathbf{r}_i-\ma
 **What the result means.** The force vector points towards the mass-weighted pull of the cloud. Its magnitude (about $10^{-11}$ N for a 1 kg test mass here) is tiny because $G$ is small and the masses are small. Two equal masses cancel at their midpoint, and a single mass reproduces the inverse-square law (both tested).
 
 ## Run
-From the repository root, `cd projects/point-mass-gravity` first, then:
+From the repository root, `cd projects/point-mass-gravity` first, then run it. For example:
 ```bash
 python gravity_field.py
 python gravity_field.py masses.csv --object 0 0 5 2    # test mass 2 kg at (0, 0, 5)

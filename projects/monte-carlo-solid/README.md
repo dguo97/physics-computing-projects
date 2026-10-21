@@ -14,7 +14,7 @@ $$V=\iiint \mathbf 1_{\text{in}}\,dV,\qquad M=\iiint \rho\,\mathbf 1_{\text{in}}
 **What the result means.** The volume equals $\pi^2/2\approx4.935$ (exact: $\int\pi\cos^2z\,dz$), which checks the method. The mass is about 16.7, with a Monte-Carlo uncertainty of a few hundredths at $10^6$ samples.
 
 ## Run
-From the repository root, `cd projects/monte-carlo-solid` first, then:
+From the repository root, `cd projects/monte-carlo-solid` first, then run it. For example:
 ```bash
 python solid_mass.py
 python solid_mass.py --n 5000000 --seed 1

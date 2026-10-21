@@ -16,7 +16,7 @@ $$\eta=\frac{2(\rho_s-\rho_l)\,g\,r^2\,t}{9\,l}$$
 **Units note.** The liquid volume (0.1) is used in m³, as in the original script, which makes the liquid density only 1.4 kg/m³ and its effect negligible. If that volume is really 0.1 litres, run with `--liquid-volume-in-litres`: the liquid density becomes 1400 kg/m³ and $\eta\approx25.2\pm1.0$ Pa·s.
 
 ## Run
-From the repository root, `cd projects/viscometer-uncertainty` first, then:
+From the repository root, `cd projects/viscometer-uncertainty` first, then run it. For example:
 ```bash
 python viscometer.py --n 50000 --seed 1
 python viscometer.py --liquid-volume-in-litres
